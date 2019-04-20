@@ -40,8 +40,8 @@ class ReviewTableViewController: UITableViewController {
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
         
-        guard let spot = spot else {
-            print("ERROR: did not have a valid spot in reviewDetailViewController")
+        guard spot != nil else {
+            print("*** ERROR: did not have a valid Spot in ReviewDetailViewController.")
             return
         }
         nameLabel.text = spot.name
@@ -61,7 +61,7 @@ class ReviewTableViewController: UITableViewController {
         }
     }
     @IBAction func starButtonPressed(_ sender: UIButton) {
-        rating = sender.tag + 1
+        rating = sender.tag + 1 // add one since we're zero indexed
     }
     
     @IBAction func reviewTitleChanged(_ sender: UITextField) {

@@ -16,6 +16,7 @@ class SpotsListViewController: UIViewController {
     
     @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    
     var spots: Spots!
     var authUI: FUIAuth!
     var locationManager: CLLocationManager!
@@ -35,7 +36,7 @@ class SpotsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         getLocation()
-        navigationController?.setToolbarHidden(false, animated: true)
+        navigationController?.setToolbarHidden(false, animated: false)
         spots.loadData {
             self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
