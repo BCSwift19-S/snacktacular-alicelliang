@@ -596,7 +596,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="itO-i8-qU5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9wh-dm-AAD">
@@ -608,7 +608,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted: Dc. 32,2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-nK-79T">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="posted: Dec. 32,2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-nK-79T">
                                                     <rect key="frame" x="192" y="5" width="175" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="175" id="UL7-zc-LjI"/>
@@ -671,12 +671,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="dzP-4m-C0d">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hU3-gD-3Vn">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="hU3-gD-3Vn">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="oWr-Lr-qrG" id="kvL-cm-dPb"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="IqO-Bz-dV8">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="IqO-Bz-dV8">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="oWr-Lr-qrG" id="0ui-b1-wfw"/>
                             </connections>
@@ -691,8 +691,8 @@
                         <outlet property="nameLabel" destination="Nmk-ti-UWk" id="T9x-au-TbY"/>
                         <outlet property="postedByLabel" destination="RLV-oU-ioa" id="jOu-eI-zaf"/>
                         <outlet property="reviewDateLabel" destination="1eh-nK-79T" id="qzF-nO-mNd"/>
-                        <outlet property="reviewTitle" destination="aqC-yi-0ZV" id="u1k-lh-CqI"/>
-                        <outlet property="reviewView" destination="9wh-dm-AAD" id="GB3-mD-wPU"/>
+                        <outlet property="reviewTextView" destination="9wh-dm-AAD" id="GB3-mD-wPU"/>
+                        <outlet property="reviewTitleField" destination="aqC-yi-0ZV" id="u1k-lh-CqI"/>
                         <outlet property="saveBarButton" destination="IqO-Bz-dV8" id="8JS-F2-dYk"/>
                         <outletCollection property="starButtonCollection" destination="rzK-IM-KKL" collectionClass="NSMutableArray" id="6PT-JU-oHD"/>
                         <outletCollection property="starButtonCollection" destination="WUO-Ef-9JA" collectionClass="NSMutableArray" id="LMB-T2-ikK"/>
